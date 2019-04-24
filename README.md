@@ -5,8 +5,6 @@ return a list with isolated stars.
 Isolated stars are stars that are at least farther than `dist_min` from any other
 stars.
 The returned list may be empty if no stars are isolated.
-    
-Watch out for O(N^2) algorithms!
 
 ## Instructions: 
 

@@ -7,12 +7,9 @@ Code Challenge: Isolated Stars.
 def isolated(star_list, dist_min):
     """
     Given a list of (x, y) pair tuples representing star positions on an image,
-    return a list with isolated stars.
+    return a list with the indices of the isolated stars.
     Isolated stars are stars that are at least farther than `dist_min` from any other
-    stars.
+    star.
     Return list may be empty if no stars are isolated.
-    
-    Hint: Watch out for N^2 algorithms!
     """
-    ...
-
+    raise NotImplementedError
