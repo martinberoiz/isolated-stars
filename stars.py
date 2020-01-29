@@ -3,6 +3,7 @@
 Code Challenge: Isolated Stars.
 (c) CGWA Time Domain Astronomy Group
 """
+from scipy.spatial import KDTree
 
 def isolated(star_list, dist_min):
     """
@@ -12,4 +13,10 @@ def isolated(star_list, dist_min):
     star.
     Return list may be empty if no stars are isolated.
     """
-    raise NotImplementedError
+    isolated = []
+    kdtree = KDTree(star_list)
+    for star_index, star in enumerate(star_list):
+        dists, close_stars = kdtree.query(star, k=2)
+        if dists[1] > dist_min:
+            isolated.append(star_index)
+    return isolated

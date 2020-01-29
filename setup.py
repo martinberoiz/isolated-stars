@@ -19,6 +19,6 @@ setup(name='tdagcodechallenge',
       author_email='martin.beroiz@utrgv.edu',
       url='https://github.com/ctmobservatory/codechallenge',
       py_modules=['stars', ],
-      install_requires=[],
+      install_requires=["scipy",],
       test_suite='tests',
       )
